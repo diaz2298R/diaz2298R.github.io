@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Libro</title>
+  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/myCSS.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="js/libro.js" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" charset="utf-8"></script>
+
+</head>
+
+<body>
+ 
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <form class="form-horizontal">
+                    <div class="col-md-6 ">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Nombre: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="Name" value="" >
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Tipo: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="Type" value="" >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Editorial: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="Editorial" value="" >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="nombre">Autor: </label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" id="Autor" value="" >
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="container col-xs-12 col-md-8 col-md-offset-2 form-group">
+                <div class="col-md-6 form-group">
+                    <button type="submit" class="btn btn-block" id="addLibro">Agregar</button>
+                </div>
+
+
+                <div class="col-md-6 form-group">
+                    <button type="submit" class="btn btn-block" id="delLibro">borrar</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="container col-xs-12 col-md-8 col-md-offset-2">
+                <div class="panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">Listado de libros</div>
+                    <!-- Table -->
+                    <div class="table-responsive">
+                        <table class="table" id="tableBiblioteca">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Tipo</th>
+                                    <th>Editorial</th>
+                                    <th>Autor</th>
+                                </tr>
+                            </thead>
+                           
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
